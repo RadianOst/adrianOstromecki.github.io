@@ -17,11 +17,23 @@ body{
     background: #34b399;
 }
 
-.sticker textarea{
+.sticker .content{
     min-height: 100px;
-    min-width: 150px;
+    min-width: 200px;
     border: none;
     background: transparent;
+}
+
+.sticker .bar .title{
+    height: 15px;
+    min-width: 100px;
+    border: none;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    resize: none;
+    overflow: hidden;
+    
 }
 
 .sticker .bar:hover{
@@ -31,4 +43,24 @@ body{
 
 .sticker:hover{
     z-index: 1;
+}
+
+.saveButton,
+.deleteButton{
+    border: none;
+    position: absolute;
+    top: 2px;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.deleteButton{
+    border-radius: 50%;
+    right: 5px;
+    background: red;
+}
+
+.saveButton{
+    background: blue;
 }
