@@ -149,9 +149,9 @@ onAddNoteBtnClick = function () {
 }
 
 init = function () {
-    if (!testLocalStorage){
+    if (!testLocalStorage()){
         saveNote = deleteNote = function (note) {
-            console.warn("Local storage is not working!");
+            alert("Local storage is not working!");
         }
     } else {
         saveNote = function (note) {
